@@ -1,0 +1,80 @@
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2VhfGVufDB8fDB8fHww);
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .game {
+            background: white;
+            padding: 40px;
+            width: 350px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .dice {
+            width: 120px;
+            height: 120px;
+            margin: 20px auto;
+            background: white;
+            border: 5px solid #333;
+            border-radius: 20px;
+            display: grid;
+            place-items: center;
+            font-size: 70px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #4c5fd5;
+        }
+
+        #result {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #444;
+            font-weight: bold;
+        }
+
+        .rolling {
+            animation: roll 0.5s;
+        }
+
+        @keyframes roll {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg) scale(1.2);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
